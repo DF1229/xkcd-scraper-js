@@ -67,3 +67,8 @@ export function getComicTitle(rawHtml) {
     const $ = cheerio.load(rawHtml);
     return $('div#ctitle').text();
 }
+
+export function getComicHotLink(rawHtml) {
+    const $ = cheerio.load(rawHtml);
+    return $('div#middleContainer a:nth-child(2)').text();
+}

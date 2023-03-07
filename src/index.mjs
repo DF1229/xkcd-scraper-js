@@ -24,6 +24,7 @@ for (let num = 1; num <= 2745; num++) {
         alt: comicAttr.title,
         filename: filename,
         url: pageUrl,
+        imgUrl: comicUrl
     }
 
     await ComicModel.new(comicBuffer, comicData);

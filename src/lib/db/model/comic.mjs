@@ -6,6 +6,7 @@ const comicSchema = new mongoose.Schema(
         title: String,
         alt: String,
         url: String,
+        imgUrl: String,
         filename: String,
         comic: Buffer,
         createdAt: { type: Date, default: Date.now() }
@@ -25,6 +26,7 @@ const comicSchema = new mongoose.Schema(
                         alt: data.alt,
                         filename: data.filename,
                         url: data.url,
+                        imgUrl: data.imgUrl,
                         comic: buffer
                     });
                 } catch(err) {
